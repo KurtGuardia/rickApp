@@ -45,7 +45,7 @@ export default function Input({
         onChange={(e) => setValue(e.target.value)}
         placeholder='habla con Rick...'
         className='input_tag'
-        rows={6}
+        rows={4}
         cols={50}
       />
       <div

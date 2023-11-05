@@ -15,7 +15,7 @@ export default function Main() {
   const [message, setMessage] = useState(null)
   const [name, setName] = useState('')
   const [showOverlay, setShowOverlay] = useState(true)
-  const [showSpinner, setShowSpinner] = useState(true)
+  const [showSpinner, setShowSpinner] = useState(false)
 
   function generateRandomRickImg() {
     const segundos = Math.floor(Math.random() * 15) + 3
