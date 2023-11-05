@@ -1,0 +1,20 @@
+@import './varialbes.scss';
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    border: 20px solid transparent;
+    border-top: 20px solid $green;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    animation: spin 1s linear infinite;
+}

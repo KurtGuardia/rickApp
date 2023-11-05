@@ -1,0 +1,29 @@
+@import '../scss/varialbes.scss';
+
+.input {
+    position: relative;
+    display: flex;
+    width: fit-content;
+
+    &_tag {
+        padding: 20px;
+        padding-bottom: 50px;
+        border-radius: 25px;
+        background-color: white;
+        outline: 0;
+        color: black;
+        font-size: 25px;
+
+        &:focus {
+            border-color: $pink;
+        }
+    }
+
+    &_icon {
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        font-size: xxx-large;
+    }
+}

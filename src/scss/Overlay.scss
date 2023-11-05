@@ -1,0 +1,44 @@
+@import '../scss/varialbes.scss';
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+
+    p {
+        color: white;
+        font-size: 60px;
+    }
+
+    input {
+        margin: 50px;
+        padding: 10px;
+        font-size: 80px;
+        width: 40%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+        color: $brown;
+    }
+
+    div {
+        padding: 10px 20px;
+        font-size: 30px;
+        background-color: $green;
+        color: $brown;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+/* Estilos adicionales según tus preferencias */

@@ -1,0 +1,89 @@
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+
+    &_rick {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+        width: 800px;
+        animation: flotar 5s infinite alternate ease-in-out;
+
+        & img {
+            height: 100%;
+        }
+    }
+
+    &_texts {
+        width: 50%;
+        height: 95vh;
+
+        &-ricks {
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+
+            h1 {
+                height: 100%;
+                color: rgb(16, 80, 177);
+                font-size: 28px;
+                word-wrap: break-word;
+                overflow: hidden;
+                /* Ensures the content is not revealed until the animation */
+                border-right: .15em solid orange;
+                // /* The typwriter cursor */
+                // white-space: nowrap;
+                // /* Keeps the content on a single line */
+                margin: 0 auto;
+                /* Gives that scrolling effect as the typing happens */
+                letter-spacing: .15em;
+                /* Adjust as needed */
+                animation:
+                    typing 3.5s steps(40, end),
+                    blink-caret .75s step-end infinite;
+            }
+        }
+    }
+}
