@@ -47,6 +47,10 @@ export default function Main() {
           options,
         )
         const data = await response.json()
+        console.log(
+          '🚀 ~ file: Main.jsx:50 ~ getMessage ~ data:',
+          data,
+        )
         setMessage(data.choices[0].message.content)
         setShowSpinner(false)
       } catch (error) {
